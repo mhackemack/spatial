@@ -35,6 +35,7 @@ xx = [0,0;...
 % Test Lagrange Property
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 b = [b1;b2;b3;b4;b5;b6;b7;b8;b9;b10];
+g = [diff(b,'x'), diff(b,'y')];
 
 for i=1:length(b)
     for j=1:length(b)
